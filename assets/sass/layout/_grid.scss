@@ -1,0 +1,50 @@
+// Sistema de grillas:
+* {
+  display: grid;
+}
+.container {
+  grid-template-columns: 1fr;
+}
+nav {
+  grid-template-columns: 2fr 1fr;
+}
+
+.section {
+  grid-template-columns: 2fr 1fr;
+}
+
+.listad-noticias {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.aside{
+    grid-template-columns: 1fr;
+}
+
+//otroooo
+
+@include respond-to($bp-sm) {
+  * {
+    display: grid;
+  }
+  .menu {
+    grid-template-columns: 20px 1fr;
+    grid-template-rows: 1fr;
+  }
+  .section {
+    grid-template-columns: 1fr;
+  }
+  .listad-noticias {
+    grid-template-columns: 1fr;
+  }
+}
+
+.newsletter {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr;
+}
